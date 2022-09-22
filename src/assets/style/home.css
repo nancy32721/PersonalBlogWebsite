@@ -25,3 +25,9 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+@media screen and (max-width: 768px) {
+    .post-grid-item {
+        width: 100%;
+    }
+}

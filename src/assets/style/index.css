@@ -15,7 +15,7 @@ body {
     grid-template-areas: 'header' 'content' 'footer';
 }
 
-header {
+.site-header {
     grid-area: header;
     display: flex;
     justify-content: space-between;
@@ -67,4 +67,11 @@ footer {
 
 .social-media-item {
     padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
 }
