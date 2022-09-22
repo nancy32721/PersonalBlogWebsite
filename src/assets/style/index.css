@@ -1,0 +1,70 @@
+@import "about.css";
+@import "home.css";
+@import "post.css";
+
+body {
+    margin: 0;
+}
+
+.site {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 20px;
+    grid-template-areas: 'header' 'content' 'footer';
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #737495;
+    color: white;
+    height: 100px;
+    padding: 20px;
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.logo-name {
+    font-size: 60px;
+}
+
+.content {
+    grid-area: content;
+    padding: 20px;
+    overflow: auto;
+    font-family: sans-serif;
+}
+
+footer {
+    grid-area: footer;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #737495;
+}
+
+.social-media-item {
+    padding: 10px;
+}
